@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BINTERNET</title>
+	<!--style sheet link -->
+	<link rel="stylesheet" type="text/css" href="style.css">  <!--nav css-->
+  <link rel="stylesheet" type="text/css" href="vertical-timeline-master\css\style.css">  <!--timeline css-->
+  <link rel="stylesheet" type="text/css" href="team\style.css">       <!--team css-->
+  <link rel="stylesheet" type="text/css" href="login\style.css">      <!--Login css-->
+
+	<!--link for fa -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<!--custom fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	
+    <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+  <script src="http://code.jquery.com/jquery-3.3.1.js"> </script>
+</head>
+<body>
+	
+<div id="main" class="main">
+	<nav>
+		<ul>
+			<li><a href="#service">SERVICE</a></li>
+			<li><a href="#Abstract">ABSTRACT</a></li>
+			<li><a href="#Team">TEAM</a></li>
+			<li><a href="database\index.html">CONTACT</a></li>
+		</ul>
+		<li><a href="#main" style="font-family: 'Kaushan Script'; font-size: 25px; margin-left: 100px">Binternet</a></li>
+	</nav>
+</div>
+ 
+ <!--Scroll fixed top -->
+<script type="text/javascript">
+  $(window).on("scroll",function(){
+    if($(window).scrollTop()){
+      $('nav').addClass('black');
+    }
+    else{
+      $('nav').removeClass('black');
+    }
+  })
+</script>
+
+<!--slogan-->
+<div class="title">
+	<center>
+		<h1>STEPS</h1>
+		<h1>TOWARDS GREEN INDIA</h1>
+	</center>
+  <button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width: 200px; margin-left: 220px;">
+Login</button>
+</div>
+
+<!--Login-->
+
+<div id="modal-wrapper" class="modal">
+  
+  <div class="modal-content animate">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="login/1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">Login Form</h1>
+    </div>
+
+    <div class="container" id="user_div">
+      <input type="text" placeholder="Enter Username" id="email1" required>
+      <input type="password" placeholder="Enter Password" id="password1" required>        
+      <button onclick="validate()">Login</button>
+     <!-- <input type="checkbox" style="margin:26px 30px;"> Remember me      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>-->
+    </div>
+    
+  </div>
+  
+</div>
+
+
+<!--Service-->
+<section id="service">
+	<h2 style="text-align: center; font-family: 'Montserrat'; padding: 20px">SERVICES</h2>
+
+	<div class="row">
+		<div class="column">
+    		<a><i class="fas fa-route"></i></a>
+    		<h2 style="text-align: center;">Dynamic Routing</h2>
+    		<p>For waste collection every time a new route can be taken into account according to fill level for waste disposal.</p>
+  		</div>
+  		<div class="column">
+    		<a><i class="fas fa-desktop"></i></a>
+    		<h2 style="text-align: center;">Cloud Monitoring</h2>
+    		<p>Uploads the current fill level of every waste disposal unit for user to monitor and optimize. </p>
+  		</div>
+  		<div class="column">
+    		<a><i class="fas fa-file"></i></a>
+    		<h2 style="text-align: center;">Real-time Data</h2>
+    		<p>Can view the fill level of every waste disposal unit from any device connected to internet.</p>
+  		</div>
+	</div>
+</section>
+
+
+
+<!--Abstract-->
+<section id="Abstract" class="cd-timeline js-cd-timeline">
+  <h2 style="text-align: center; color: black;">Abstract</h2>
+    <p style="text-align: center;">Work flow</p>
+    <div class="cd-timeline__container">
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img js-cd-img">
+          <img src="images\1.jpg" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>Arduino UNO</h2>
+          <p>The Arduino Uno is a microcontroller based on the ATmega328. It has 14 digital input/output pins in which 6 can be used as PWM outputs, a 16 MHz ceramic resonator, an ICSP header, a USB connection, 6 analog inputs, a power jack and a reset button. This contains all the required support needed for microcontroller.</p>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img js-cd-img">
+          <img src="images\2.jpg" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>HC-SR04</h2>
+          <p>The HC-SR04 is The Ultrasonic Sensor that transmits an ultrasonic wave, this wave travels in air and when it gets objected by any material it gets reflected back toward the sensor this reflected wave is observed by the Ultrasonic receiver, to display the data on the webpage.</p>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+       <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img js-cd-img">
+          <img src="images\16.png" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>16x2 LCD</h2>
+          <p>A 16x2 LCD display is very basic module and is very commonly used in various devices and circuits. These modules are preferred over seven segments and other multi segment LEDs. The reasons being: LCDs are economical; easily programmable; have no limitation of displaying special & even custom characters, animations and so on.</p>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img js-cd-img">
+          <img src="images\3.jpg" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>ESP-8266</h2>
+          <p>The ESP8266 is a low-cost Wi-Fi microchip with full TCP/IP stack connection that collects the data from ultrasonic distance sensor and send it to the webpage for displaying the data.</p>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img js-cd-img">
+          <img src="images\4.jpg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content js-cd-content">
+          <h2>GUI</h2>
+          <p>The graphical user interface is an interactive webpage that will show the data collected from the ultra sonic sensor that is then transmitted via the ESP-8266 to display it on the webpage.</p>
+          <!--<a href="#0" class="cd-timeline__read-more">Read more</a>
+          <span class="cd-timeline__date">Feb 14</span>-->
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block js-cd-block">
+        <div class="cd-timeline__img js-cd-img">
+          <img src="images\5.png" alt="Location">
+        </div> <!-- cd-timeline__img -->
+      </div> <!-- cd-timeline__block -->
+    </div>  <!-- cd-timeline__container -->
+  </section> <!-- cd-timeline -->
+
+
+<!--Team-->
+  <div id="Team" class="team-section">
+    <div class="inner-width">
+      <h1>OUR TEAM</h1>
+      <div class="pers">
+        <div class="pe">
+          <img src="team/1.jpeg" alt="">
+          <div class="p-name">RUSHI MEHTA</div>
+          <div class="p-sm">
+            <a href="https://www.facebook.com/rushi.mehta.00?ref=br_rs"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Rushi_Mehta17"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/Rushi_Mehta17"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    <div class="pe">
+        <img src="team/2.jpg" alt="">
+      <div class="p-name">JUBIN KAMDAR</div>
+      <div class="p-sm">
+       	<a href="https://www.facebook.com/jubin.kamdar.9"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/jubinkamdar46"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  <div class="pe">
+      <img src="team/3.JPG" alt="">
+    <div class="p-name">FENIL BHIMANI</div>
+  
+    <div class="p-sm">
+        <a href="https://www.facebook.com/fenil.bhimani.90"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/fenil__bhimani"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- If user clicks anywhere outside of the modal, Modal will close-->
+<script>
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- firebase login script 
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCUcQMO_YPgKLfFezjfHGu-5rQV8qY481s",
+    authDomain: "fenil-007.firebaseapp.com",
+    databaseURL: "https://fenil-007.firebaseio.com",
+    projectId: "fenil-007",
+    storageBucket: "fenil-007.appspot.com",
+    messagingSenderId: "944236641702"
+  };
+  firebase.initializeApp(config);
+</script>-->
+<script src="login/index.js"></script>
+</body>
+</html>
